@@ -42,14 +42,38 @@ public class Teoria {
         //%s -> palabra
         // %d -> numero sin decimales
         // %f -> numero con decimales
-        System.out.printf("Me llamo %s con apellidos %s %s y tengo %d años", nombre, apellidos, apellidos1, edad);
+        System.out.printf("Me llamo %s con apellidos %s %s y tengo %d años\n", nombre, apellidos, apellidos1, edad);
 
         //Scanner permite realizar lecturas por teclado
 
+        //Dependiendo del tipo de dato que quieras leer la variable lector tiene metodos para ello.
+        // metodo: Agrega funcionalidad Variables: cualifican, guardan caracteristica o un dato.
+
         Scanner lector = new Scanner(System.in);
         System.out.println("Indicame tu nombre");
+        String nombre1 = lector.nextLine();
 
-        //Dependiendo del tipo de dato que quieras leer la variable lector tiene metodos para ello.
+        System.out.println("En que ciclo estas matriculado");
+        String ciclo1 = lector.nextLine();
+
+        System.out.println("Que nota quieres sacar de media en  "+ciclo1);
+        double media = lector.nextDouble();
+        lector.close();
+
+        System.out.println("nombre: "+nombre1);
+        System.out.println("ciclo: "+ciclo1);
+        System.out.println("media: "+media);
+
+        //Arimeticos: + - * / %
+        // Asignacion da un valor = =* -= *= /= %=
+        //Relacionales comparan dos o mas variables entre si < <= > >= == !=
+        //logicos sentencias && ||
+
+
+
+
+
+
     }
 
 
